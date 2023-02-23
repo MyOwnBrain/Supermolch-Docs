@@ -1,0 +1,76 @@
+:root {
+    font-size: 16px;
+
+    --dark1: #0a0a0a;
+    --dark2: #111111;
+    --dark3: #181818;
+    --dark4: #262626;
+
+    --purple: #7300FF;
+    --red: #FF0037;
+    --yellow: #FFBB00;
+    --green: #4AD295;
+    --white: #F7F7FF;
+    --black: #000000;
+}
+
+.landing {
+    flex-grow: 1;
+    background: url(https://i.imgur.com/fbSxrW7.png), var(--dark2);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.landing:hover > div {
+    opacity: 1;
+}
+
+.landing > div {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2rem);
+    transition: all ease 250ms;
+}
+
+.landing > div h1 {
+    font-size: 4rem;
+    line-height: normal;
+    color: var(--red);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-shadow: 0 0 2rem var(--dark1);
+}
+
+.landing > div div {
+    display: flex;
+    gap: 1rem;
+}
+
+.landing > div div a {
+    all: unset;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 0 2rem var(--dark1));
+    color: var(--dark1);
+}
+
+.landing > div div a:nth-child(1) {
+    background: var(--green);
+}
+
+.landing > div div a:nth-child(2) {
+    background: var(--purple);
+}
+/*
+.landing > div div a:nth-child(3) {
+    background: var(--yellow);
+}*/

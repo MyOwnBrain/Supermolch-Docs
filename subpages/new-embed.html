@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/standard.css">
+        <script src="../scripts/script.js" defer></script>
+        <title>/new-embed</title>
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html" class="title" id="title">
+                <img src="../images/docs.png" alt="logo">
+                <span>Supermolch Docs</span>
+            </a>
+            <div class="links">
+                <a href="https://myownbrain.github.io/SuperMolch-Links/">Supermolch</a>
+            </div>
+        </nav>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="new-embed.html" target="_self"><text class="code1">/new-embed</text></a></li>
+                <li><a href="status.html" target="_self"><text class="code1">/status</text></a></li>
+            </ul>
+        </div>
+        <main>
+            <div class="control">
+                <button id="to_description" href="#description">Description</button>
+                <button id="to_syntax" href="#syntax">Syntax</button>
+                <button id="to_example" href="#example">Example</button>
+            </div>
+            <div id="description">
+                <h1>Description</h1>
+                <p>Mit <text class="code1">/new-embed</text> kann man ein eigenes Embed selber erstellen.</p>
+            </div>
+            <div id="syntax">
+                <h1>Syntax</h1>
+                <text class="code2 cbgreen">/new-embed</text>
+                <p>Aktuell sind folgende Elemente einstellbar:</p>
+                <div class="columns">
+                    <text class="code2 cbgreen">
+                        Title <br>
+                        Description <br>
+                        Author <br>
+                        Color <br>
+                        Thumbnail <br>
+                        Image
+                    </text>
+                    <text class="code2">
+                        Required <br>
+                        Required <br>
+                        Required <br>
+                        Not Required <br>
+                        Required <br>
+                        Required
+                    </text>
+                </div>
+                <p>HINWEIS: Sobald ein der <text class="code1">Required</text> Elemente angegeben ist sind alle anderen nicht mehr nötig. Beispiel: Wenn der Titel angegeben ist kann man den rest weglassen.</p>
+            </div>
+            <div id="example">
+                <h1>Example</h1>
+                <p>Der <text class="code1">Style</text> Button in Schritt <text class="code1">3</text> führt zu Schritt <text class="code1">4</text>.</p>
+                <p>Der <text class="code1">Publish</text> Button in Schritt <text class="code1">3</text> sendet das in Schritt <text class="code1">3</text> gezeigte Embed normal (Ohne Buttons) ab.</p>
+                <div class="columns">
+                    <section>
+                        <div data-type="img" data-order="1">
+                            <img src="../images/new-embed/prompt.png" alt="prompt">
+                        </div>
+                        <div data-type="img" data-order="2">
+                            <img src="../images/new-embed/content-modal.png" alt="content-modal" data-order="2">
+                        </div>
+                    </section>
+                    <section>
+                        <div data-type="img" data-order="3">
+                            <img src="../images/new-embed/embed-preview.png" alt="embed-preview" data-order="3">
+                        </div>
+                        <div data-type="img" data-order="5">
+                            <img src="../images/new-embed/final-embed.png" alt="embed-preview" data-order="5">
+                        </div>
+                    </section>
+                    <section>
+                        <div data-type="img" data-order="4">
+                            <img src="../images/new-embed/style-modal.png" alt="embed-preview" data-order="4">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
